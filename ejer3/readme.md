@@ -1,7 +1,7 @@
 # Tabla de verificacion
 
-## Leer `nombre` y `estatura` de una persona, Imprimir el nombre si su estatura es mayor a 165.
+## Realizar un diagrama donde solicite un `número` y determine si es par o impar.
 
-- `Tabla de verdad`
+- `Tabla de verificacion`
 
-![Ejercicio 2](../img/ejer2.png "Tabla de verificacion")
+![Ejercicio 2](../img/ejer3.png "Tabla de verificacion")

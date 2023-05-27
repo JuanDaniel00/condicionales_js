@@ -3,20 +3,24 @@
 const Peso = parseInt(prompt("Ingrese su peso (Kg)"));
 
 const PesoDismin1 = (Peso * 0.10).toFixed(2);
+const PesoDisminuido1 = parseInt(Peso - PesoDismin1).toFixed(2);
+
 console.log(`La disminución del 10% es: ${PesoDismin1}Kg`);
 
-const Peso2Dismin2 = (PesoDismin1 * 0.185).toFixed(2);
+const Peso2Dismin2 = (PesoDisminuido1 * 0.185).toFixed(2);
+const PesoDisminuido2 = parseInt(PesoDisminuido1 - Peso2Dismin2).toFixed(2);
 console.log(`La disminución del 18.5% es: ${Peso2Dismin2}Kg`);
 
-const PesoAumento = (Peso2Dismin2 * 0.03).toFixed(2);
+const PesoAumento = (PesoDisminuido2 * 0.03).toFixed(2);
 console.log(`El aumento del 3% es: ${PesoAumento}Kg`);
 
-const PesoActual = parseInt(Peso - PesoDismin1 - Peso2Dismin2 + PesoAumento).toFixed(2);
+PesoActual = parseInt(PesoDisminuido2) + parseInt(PesoAumento);
+
 
 if (PesoActual > 78) {
     console.log(`El peso actual es: ${PesoActual}Kg`);
     console.log(`Tiene sobrepeso`);
-}else{
+} else {
     console.log(`El peso actual es: ${PesoActual}Kg`);
     console.log(`No tiene sobrepeso`);
 }
