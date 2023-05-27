@@ -6,10 +6,10 @@ const NumeroHoras = parseInt(prompt("Ingrese el número de horas trabajadas"));
 const Salario = ValorHora * NumeroHoras;
 
 if (Salario < 400000) {
-    console.log(`El salario neto es: ${Salario - (Salario * 0.03) - (Salario * 0.05)}`);
+    console.log(`El salario neto al 3% y el 5% es: ${Salario - (Salario * 0.03) - (Salario * 0.05)}`);
 }
 else if (Salario > 800000) {
-    console.log(`El salario neto es: ${Salario - (Salario * 0.04) - (Salario * 0.07)}`);
+    console.log(`El salario neto respecto al 4% y 7% es: ${Salario - (Salario * 0.04) - (Salario * 0.07)}`);
 }else if(Salario >= 400000 && Salario <= 800000) {
-    console.log(`El salario neto respecto es: ${Salario - (Salario * 0.09) - (Salario * 0.07)}`);
+    console.log(`El salario neto respecto al 9% y 7% es: ${Salario - (Salario * 0.09) - (Salario * 0.07)}`);
 }

@@ -4,7 +4,6 @@ const ValorHora = parseInt(prompt("Ingrese el valor de cada hora"));
 const NumeroHoras = parseInt(prompt("Ingrese el número de horas trabajadas"));
 
 const SalarioBasico = ValorHora * NumeroHoras;
-const AuxilioAlimentacion = SalarioBasico * 0.01;
 
 const SaludDescuento = SalarioBasico * 0.015;
 const PensionDescuento = Math.round(SalarioBasico * 0.281);
@@ -12,11 +11,15 @@ const ParafiscalesDescuento = SalarioBasico * 0.0055;
 const Donacion = SalarioBasico * 0.0005;
 
 let SubsidioTransporte = 0;
+let AuxilioAlimentacion = 0;
 
 if (SalarioBasico < 300000) {
     SubsidioTransporte = 45000;
+    AuxilioAlimentacion = SalarioBasico * 0.01;
+    
 } else {
     SubsidioTransporte = 25000;
+    AuxilioAlimentacion = 0;
 }
 
 const SalarioNeto = SalarioBasico + AuxilioAlimentacion + SubsidioTransporte - SaludDescuento - PensionDescuento - ParafiscalesDescuento;

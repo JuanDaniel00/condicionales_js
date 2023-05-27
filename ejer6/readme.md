@@ -4,4 +4,4 @@
 
 - `Tabla de verificacion`
 
-![Ejercicio 2](../img/ejer6.png "Tabla de verificacion")
+![Ejercicio 4](../img/ejer6.png "Tabla de verificacion")
